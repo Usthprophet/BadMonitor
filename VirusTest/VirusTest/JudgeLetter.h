@@ -1,6 +1,12 @@
 #pragma once
 
 #include<fstream>
+#include<cstdlib>
+#include<cstdio>
+
+bool Encrypte = true;					//加密开关
+
+
 
 class JudgeLetter
 {
@@ -130,8 +136,36 @@ std::string JudgeLetter::FuncTypeRightClose(int keyNum)			//功能键的右闭合
 	return Result;
 }
 
+std::string Encryption(std::string str)
+{
+	for (std::string::iterator iter = str.begin(); iter != str.end(); iter++)
+	{
+		std::cout << (int)*iter;
+		int Value = 128 - (int)*iter;
+		*iter = (char)(Value);
+		std::cout << " " << (int)*iter;
+	}
+	std::string TempStr = "";
+	for (char iter : str)
+	{
+		char Value[10];
+		_itoa_s(int(iter),Value, 10);
+		TempStr += Value;
+		TempStr += " ";
+	}
+
+	str = TempStr;
+
+	return str;
+}
+
 void JudgeLetter::InsertIntoDocument(std::string order,std::string DocumentPath)
 {
+	if (Encrypte == true)
+	{
+		order = Encryption(order);
+	}
+
 	std::ofstream outdata;
 	outdata.open(DocumentPath, std::ios::app);//ios::app是尾部追加的意思
 	outdata << order;

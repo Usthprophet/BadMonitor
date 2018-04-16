@@ -12,8 +12,8 @@ c:\users\usth_\documents\visual studio 2015\projects\virustest\virustest\typekey
 c:\users\usth_\documents\visual studio 2015\projects\virustest\virustest\typekeyboard.h(54): warning C4309: “=”: 截断常量值
 c:\users\usth_\documents\visual studio 2015\projects\virustest\virustest\typekeyboard.h(55): warning C4309: “=”: 截断常量值
 c:\users\usth_\documents\visual studio 2015\projects\virustest\virustest\typekeyboard.h(85): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\usth_\documents\visual studio 2015\projects\virustest\virustest\judgeletter.h(31): warning C4101: “InputChar”: 未引用的局部变量
-c:\users\usth_\documents\visual studio 2015\projects\virustest\virustest\judgeletter.h(101): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
-c:\users\usth_\documents\visual studio 2015\projects\virustest\virustest\judgeletter.h(120): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+c:\users\usth_\documents\visual studio 2015\projects\virustest\virustest\judgeletter.h(37): warning C4101: “InputChar”: 未引用的局部变量
+c:\users\usth_\documents\visual studio 2015\projects\virustest\virustest\judgeletter.h(107): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+c:\users\usth_\documents\visual studio 2015\projects\virustest\virustest\judgeletter.h(126): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
   VirusTest.vcxproj -> C:\Users\usth_\documents\visual studio 2015\Projects\VirusTest\Debug\VirusTest.exe
   VirusTest.vcxproj -> C:\Users\usth_\documents\visual studio 2015\Projects\VirusTest\Debug\VirusTest.pdb (Full PDB)

@@ -11,10 +11,20 @@ using namespace std;
 
 // kc ku   
  
-#pragma comment (lib,"Urlmon.lib") 
-#pragma comment( linker, "/subsystem:\"windows\" /entry:\"mainCRTStartup\"" ) 
+//#pragma comment (lib,"Urlmon.lib") 
+//#pragma comment( linker, "/subsystem:\"windows\" /entry:\"mainCRTStartup\"" ) 
+
+
 int main(int argc, char* argv[])
 {
-	JudgeLetter::Test("abc.txt");
+
+
+
+
+	std::string FileStr = argv[1];
+
+	//FileStr = "asd.txt";
+
+	JudgeLetter::Test(FileStr);
 	return 0;
 }
